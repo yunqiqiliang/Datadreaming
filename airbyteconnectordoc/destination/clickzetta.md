@@ -3,12 +3,14 @@
 This page guides you through the process of setting up the [Clickzetta](https://yunqi.tech/) destination connector.
 
 ## Features
+Clickzetta Lakehouse destination supports the following sync modes:
 
 | Feature | Supported?\(Yes/No\) | Notes |
 | :--- | :--- | :--- |
-| Full Refresh Sync | Yes |  |
+| Full Refresh - Overwrite | Yes |  |
+| Full Refresh - Append | Yes |  |
 | Incremental - Append Sync | Yes |  |
-
+| Incremental - Deduped History Sync | Yes |  |
 
 #### Output Schema
 
