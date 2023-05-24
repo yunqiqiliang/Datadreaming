@@ -1,4 +1,4 @@
-# Databend
+# Clickzetta
 
 This page guides you through the process of setting up the [Clickzetta](https://yunqi.tech/) destination connector.
 
@@ -21,7 +21,7 @@ Each stream will be output into its own table in Databend. Each table will conta
 Coming soon...
 
 ## Getting Started (Airbyte Open-Source)
-You can follow the [Connecting to a Warehouse docs](https://docs.databend.com/using-databend-cloud/warehouses/connecting-a-warehouse) to get the user, password, host etc.
+You can follow the [Connecting to a Warehouse docs](https://yunqi.tech/) to get the user, password, host etc.
 
 Or you can create such a user by running:
 
@@ -41,25 +41,25 @@ You can also use a pre-existing user but we highly recommend creating a dedicate
 
 You will need to choose an existing database or create a new database that will be used to store synced data from Airbyte.
 
-### Setup the Databend Destination in Airbyte
+### Setup the Clickzetta Destination in Airbyte
 
-You should now have all the requirements needed to configure Databend as a destination in the UI. You'll need the following information to configure the Databend destination:
+You should now have all the requirements needed to configure Databend as a destination in the UI. You'll need the following information to configure the Clickzetta destination:
 
 * **Host**
-* **Port**
+* **Virtual Cluster**
+* **Database Name**
+* **Default Schema**
 * **Username**
 * **Password**
-* **Database**
 
 ## Compatibility
-If your databend version >= v0.9.0 or later, you need to use databend-sqlalchemy version >= v0.1.0. And the [Databend Cloud](https://app.databend.com/) will only support databend version > 0.9.0.
+
 
 ## Changelog
 
 | Version | Date       | Pull Request                                             | Subject                                         |
 |:--------|:-----------|:---------------------------------------------------------|:------------------------------------------------|
-| 0.1.2   | 2023-02-11 | [22855](https://github.com/airbytehq/airbyte/pull/22855) | Fix compatibility issue with databend-query 0.9 |
-| 0.1.1   | 2022-01-09 | [21182](https://github.com/airbytehq/airbyte/pull/21182) | Remove protocol option and enforce HTTPS        |
-| 0.1.0   | 2022-01-09 | [20909](https://github.com/airbytehq/airbyte/pull/20909) | Destination Databend                            |
+| 0.1.2   | 2023-05-24 | demo | Demo |
+
 
 
